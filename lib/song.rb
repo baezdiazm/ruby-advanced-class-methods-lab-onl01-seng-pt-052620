@@ -46,7 +46,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(name)
-song = (name.split(" ")[1]).chomp(".mp3")
+song = self.new
+@name = (name.split(" ")[1]).chomp(".mp3")
 @artist = (name.split(" - ")[0])
 end
 end
