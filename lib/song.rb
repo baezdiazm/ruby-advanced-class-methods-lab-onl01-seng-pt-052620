@@ -49,5 +49,6 @@ def self.new_from_filename(name)
 song = self.new
 @name = (name.split(" ")[1]).chomp(".mp3")
 @artist = (name.split(" - ")[0])
+@@all << self
 end
 end
